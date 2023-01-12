@@ -1,28 +1,3 @@
-@font-face {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local(""), url(assets/fonts/montserrat/montserrat.woff2) format("woff2"), url(assets/fonts/montserrat/montserrat.woff) format("woff")
-}
-
-@font-face {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: local(""), url(assets/fonts/montserrat/montserrat-500.woff2) format("woff2"), url(assets/fonts/montserrat/montserrat-500.woff) format("woff")
-}
-
-@font-face {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: local(""), url(assets/fonts/montserrat/montserrat-600.woff2) format("woff2"), url(assets/fonts/montserrat/montserrat-600.woff) format("woff")
-}
-
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
@@ -1385,6 +1360,9 @@ em {
         left: 20px;
         right: 0;
         bottom: 0;
+        padding: 0;
+        margin: 0;
+        list-style: none;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-box;
@@ -1410,7 +1388,7 @@ em {
         -webkit-transition: opacity .3s 0s, visibility 0s .6s;
         -o-transition: opacity .3s 0s, visibility 0s .6s;
         -moz-transition: opacity .3s 0s, visibility 0s .6s;
-        transition: opacity .3s 0s, visibility 0s .6s
+        transition: opacity .3s 0s, visibility 0s .6s;
     }
 }
 
@@ -1438,8 +1416,11 @@ em {
 
 @media (min-width:1024px) {
     .pt-navbar-navs {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        list-style: none;
         padding: 0 15px;
+        margin: 0;
         pointer-events: auto;
         background: #fff;
         -webkit-border-radius: 70px;
@@ -1497,6 +1478,16 @@ em {
         -o-transition: color .1s linear;
         -moz-transition: color .1s linear;
         transition: color .1s linear
+    }
+}
+
+.pt-navbar-nav {
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover){
+    .pt-navbar-nav:hover {
+        color: #8330c2;
     }
 }
 
@@ -1567,10 +1558,6 @@ em {
         -moz-transform: translateZ(0);
         transform: translateZ(0)
     }
-}
-
-.pt-navbar-nav:hover {
-    color: #8330c2
 }
 
 .pt-navbar-nav.-active,
@@ -3696,6 +3683,7 @@ em {
     right: 0;
     bottom: 0;
     contain: strict;
+    list-style: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -4043,7 +4031,7 @@ em {
 }
 
 .pt-hero-mask.-v2 {
-    background: #6d28a1
+    background-color: #171717
 }
 
 .pt-hero-content {
@@ -4143,7 +4131,7 @@ em {
 .pt-hero-header h1 {
     font-weight: 600;
     font-size: 52px;
-    line-height: 90%;
+    line-height: 100%;
     text-align: center;
     letter-spacing: -.05em
 }
@@ -4793,7 +4781,10 @@ em {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    white-space: nowrap
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .pt-overview-logo {
@@ -5372,7 +5363,9 @@ em {
 }
 
 .pt-feature-sections {
-    margin: -10px 0
+    margin: -10px 0;
+    padding: 0;
+    list-style: none;
 }
 
 @media (min-width:1024px) {
@@ -5382,7 +5375,9 @@ em {
         display: -moz-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
-        margin: 0
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 }
 
@@ -6460,7 +6455,10 @@ em {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    white-space: nowrap
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .pt-partner-logo {

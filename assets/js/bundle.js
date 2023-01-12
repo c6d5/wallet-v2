@@ -10757,7 +10757,7 @@
                         mediaClassName: "pt-cursor-media",
                         mediaBoxClassName: "pt-cursor-media-box",
                         iconSvgClassName: "pt-svgsprite",
-                        iconSvgSrc: "/assets/img/sprites/times-o.svg",
+                        iconSvgSrc: "assets/img/sprites/times-o.svg",
                     });
                 }),
                 i
@@ -13495,7 +13495,7 @@
                 (r.injectDemoVideo = function () {
                     var t = this,
                         e = document.createElement("video");
-                    (e.src = "/assets/video/home/hero/1-full.mp4"),
+                    (e.src = "assets/video/home/hero/1-full.mp4"),
                         this.videoPlayer.replaceWith(e),
                         (this.videoPlayer = e),
                         (this.videoLoaded = !0),
@@ -13559,14 +13559,14 @@
                                 t.headline.forEach(function (t, e) {
                                     bo.create({
                                         trigger: t,
-                                        start: 0 === e ? "top bottom" : 2 === e ? "top bottom-=300" : "top bottom-=200",
-                                        end: 0 === e ? "bottom+=200 bottom" : 2 === e ? "" : "bottom+=300 bottom",
+                                        start: 0 === e ? "top bottom" : 4 === e ? "top bottom-=300" : "top bottom-=200",
+                                        end: 0 === e ? "bottom+=200 bottom" : 4 === e ? "" : "bottom+=300 bottom",
                                         toggleClass: "-active",
                                     });
                                 });
                             },
                             "(min-width:1200px)": function () {
-                                bo.create({ animation: t.tlHeadlineRoll(), trigger: t.footer, start: "top top", end: "300%", pin: t.wrap, scrub: 0.1, invalidateOnRefresh: !0 });
+                                bo.create({ animation: t.tlHeadlineRoll(), trigger: t.footer, start: "top top", end: "800%", pin: t.wrap, scrub: 0.1, invalidateOnRefresh: !0 });
                             },
                         });
                 }),
@@ -13577,6 +13577,8 @@
                             0 === n && t.fromTo(e, { opacity: 1 }, { opacity: 0.4, duration: 0.1, ease: "none" }, 0.2),
                                 1 === n && (t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.3), t.fromTo(e, { opacity: 1 }, { opacity: 0.4, duration: 0.1, ease: "none" }, 0.63)),
                                 2 === n && t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.75);
+                                3 === n && t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.75);
+                                4 === n && t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.75);
                         }),
                         t.add(function () {}, 1),
                         t
@@ -13591,7 +13593,7 @@
                             this.headlines,
                             {
                                 x: function () {
-                                    return 2 * -t.headlines.offsetWidth;
+                                    return 4 * -t.headlines.offsetWidth;
                                 },
                                 duration: 1,
                                 ease: "none",
@@ -13599,9 +13601,11 @@
                             0
                         ),
                         this.headline.forEach(function (t, n) {
-                            0 === n && e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.2),
-                                1 === n && (e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.3), e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.63)),
-                                2 === n && e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.75);
+                            0 === n && e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.08),
+                                1 === n && (e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.1), e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.3)),
+                                2 === n && (e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.4), e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.6)),
+                                3 === n && (e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.6), e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.8)),
+                                4 === n && e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.9);
                         }),
                         e.set(this.headlines, { willChange: "auto" }),
                         e
