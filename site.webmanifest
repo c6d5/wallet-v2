@@ -1,16 +1,32 @@
 {
+<<<<<<< HEAD
     "name": "Wickret",
     "short_name": "Wickret",
     "icons": [
         {
             "src": "./assets/img/icons/android-chrome-192x192.png",
+=======
+    "name": "Potion",
+    "short_name": "Potion",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+>>>>>>> d9fcd4be4928321e308b928ebf1fe3949317bb4a
             "sizes": "192x192",
             "type": "image/png"
         },
         {
+<<<<<<< HEAD
             "src": "./assets/img/icons/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+=======
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+>>>>>>> d9fcd4be4928321e308b928ebf1fe3949317bb4a
         }
     ],
     "theme_color": "#ffffff",

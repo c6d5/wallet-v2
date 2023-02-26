@@ -13559,8 +13559,13 @@
                                 t.headline.forEach(function (t, e) {
                                     bo.create({
                                         trigger: t,
+<<<<<<< HEAD
                                         start: 0 === e ? "top bottom" : 3 === e ? "top bottom-=300" : "top bottom-=200",
                                         end: 0 === e ? "bottom+=200 bottom" : 3 === e ? "" : "bottom+=300 bottom",
+=======
+                                        start: 0 === e ? "top bottom" : 4 === e ? "top bottom-=300" : "top bottom-=200",
+                                        end: 0 === e ? "bottom+=200 bottom" : 4 === e ? "" : "bottom+=300 bottom",
+>>>>>>> d9fcd4be4928321e308b928ebf1fe3949317bb4a
                                         toggleClass: "-active",
                                     });
                                 });
@@ -13575,9 +13580,16 @@
                     return (
                         this.headline.forEach(function (e, n) {
                             0 === n && t.fromTo(e, { opacity: 1 }, { opacity: 0.4, duration: 0.1, ease: "none" }, 0.2),
+<<<<<<< HEAD
                                 1 === n && (t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.3), t.fromTo(e, { opacity: 1 }, { opacity: 0.4, duration: 0.1, ease: "none" }, 0.5)),
                                 2 === n && t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.75);
                                 3 === n && t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 1);
+=======
+                                1 === n && (t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.3), t.fromTo(e, { opacity: 1 }, { opacity: 0.4, duration: 0.1, ease: "none" }, 0.63)),
+                                2 === n && t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.75);
+                                3 === n && t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.75);
+                                4 === n && t.fromTo(e, { opacity: 0.4 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.75);
+>>>>>>> d9fcd4be4928321e308b928ebf1fe3949317bb4a
                         }),
                         t.add(function () {}, 1),
                         t
@@ -13592,7 +13604,11 @@
                             this.headlines,
                             {
                                 x: function () {
+<<<<<<< HEAD
                                     return 3 * -t.headlines.offsetWidth;
+=======
+                                    return 4 * -t.headlines.offsetWidth;
+>>>>>>> d9fcd4be4928321e308b928ebf1fe3949317bb4a
                                 },
                                 duration: 1,
                                 ease: "none",
@@ -13601,9 +13617,17 @@
                         ),
                         this.headline.forEach(function (t, n) {
                             0 === n && e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.08),
+<<<<<<< HEAD
                                 1 === n && (e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.1), e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.45)),
                                 2 === n && (e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.4), e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.75)),
                                 3 === n && (e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.6), e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 1))}),
+=======
+                                1 === n && (e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.1), e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.3)),
+                                2 === n && (e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.4), e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.6)),
+                                3 === n && (e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.6), e.fromTo(t, { opacity: 1 }, { opacity: 0.6, duration: 0.1, ease: "none" }, 0.8)),
+                                4 === n && e.fromTo(t, { opacity: 0.6 }, { opacity: 1, duration: 0.1, ease: "none" }, 0.9);
+                        }),
+>>>>>>> d9fcd4be4928321e308b928ebf1fe3949317bb4a
                         e.set(this.headlines, { willChange: "auto" }),
                         e
                     );
