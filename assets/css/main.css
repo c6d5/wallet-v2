@@ -955,7 +955,11 @@ em {
     left: 0;
     right: 0;
     bottom: 0;
+<<<<<<< HEAD
     z-index: 110;
+=======
+    z-index: 90;
+>>>>>>> d9fcd4be4928321e308b928ebf1fe3949317bb4a
     max-height: 0%;
     overflow: hidden;
     pointer-events: none;
@@ -1110,7 +1114,11 @@ em {
     top: 20px;
     left: 0;
     right: 0;
+<<<<<<< HEAD
     z-index: 100;
+=======
+    z-index: 100
+>>>>>>> d9fcd4be4928321e308b928ebf1fe3949317bb4a
 }
 
 @media (min-width:1024px) {
